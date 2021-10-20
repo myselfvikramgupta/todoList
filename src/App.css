@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+.container {
+  width: 50%;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 700px;
+  overflow-y: scroll;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.d_flex_between {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.todo_title {
+  padding: 20px;
+  border-bottom: 1px solid #efefef;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.todo_list {
+  padding: 20px;
+}
+.list {
+  width: 100%;
+  border-radius: 3px;
+  padding: 10px 20px;
+  background: #efefef;
+  margin-bottom: 10px;
+}
+.list > span {
+  font-size: 16px;
+}
+.search_box {
+  width: 50%;
+}
+.search_input input {
+  width: 100%;
+  height: 35px;
+  border: none;
+  background: #efefef;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.delete_btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.delete_btn svg {
+  width: 16px;
+  height: 16px;
+  fill: #fc2121;
+}
+.card_loding {
+  width: 100%;
+  height: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
